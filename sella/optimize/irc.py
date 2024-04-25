@@ -36,12 +36,12 @@ class IRC(Optimizer):
     ):
         Optimizer.__init__(
             self,
-            atoms,
-            None,
-            logfile,
-            trajectory,
-            master,
-            force_consistent,
+            atoms=atoms,
+            restart=None,
+            logfile=logfile,
+            trajectory=trajectory,
+            master=master,
+            force_consistent=force_consistent,
         )
         self.ninner_iter = ninner_iter
         self.irctol = irctol
